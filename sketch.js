@@ -1,4 +1,3 @@
-
 var PLAY = 1;
 var END = 0;
 var gameState = PLAY;
@@ -94,13 +93,13 @@ function draw() {
 }
  
   if (gameState === END) {
-  bow.destroy();
+  bow.destroyEach();
   scene.velocityX = 0;
 }
 
  
 //Crie a função isTouching() 
-if (arrow.isTouching(greenBalloon)){
+if (arrowGroup.isTouching(greenB)) {
 //Use função destroyEach() para destruir o grupo greenBalloon (balão verde)
 greenB.destroyEach();
 //Use função destroyEach() para destruir arrowGroup (grupo de flecha).
@@ -110,17 +109,17 @@ score=score+3;
 }
 
 //Crie a função isTouching() 
-if (arrow.isTouching(blueBalloon)){
+if (arrow.isTouching(blueB)){
   //Use função destroyEach() para destruir o grupo greenBalloon (balão verde)
   blueB.destroyEach();
   //Use função destroyEach() para destruir arrowGroup (grupo de flecha).
   arrowGroup.destroyEach();
   //Aumente a pontuação em 3.
-  score=score+2;
+  score=score+3;
 }
 
 //Crie a função isTouching() 
-if (arrow.isTouching(pinkBalloon)){
+if (arrow.isTouching(pinkB)){
   //Use função destroyEach() para destruir o grupo greenBalloon (balão verde)
   pinkB.destroyEach();
   //Use função destroyEach() para destruir arrowGroup (grupo de flecha).
