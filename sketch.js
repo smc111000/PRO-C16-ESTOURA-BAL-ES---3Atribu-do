@@ -99,7 +99,7 @@ function draw() {
 
  
 //Crie a função isTouching() 
-if (arrowGroup.isTouching(greenB)) {
+if(arrowGroup.isTouching(greenB)) {
 //Use função destroyEach() para destruir o grupo greenBalloon (balão verde)
 greenB.destroyEach();
 //Use função destroyEach() para destruir arrowGroup (grupo de flecha).
@@ -109,7 +109,7 @@ score=score+3;
 }
 
 //Crie a função isTouching() 
-if (arrow.isTouching(blueB)){
+if(arrowGroup.isTouching(blueB)){
   //Use função destroyEach() para destruir o grupo greenBalloon (balão verde)
   blueB.destroyEach();
   //Use função destroyEach() para destruir arrowGroup (grupo de flecha).
@@ -119,7 +119,7 @@ if (arrow.isTouching(blueB)){
 }
 
 //Crie a função isTouching() 
-if (arrow.isTouching(pinkB)){
+if(arrowGroup.isTouching(pinkB)){
   //Use função destroyEach() para destruir o grupo greenBalloon (balão verde)
   pinkB.destroyEach();
   //Use função destroyEach() para destruir arrowGroup (grupo de flecha).
